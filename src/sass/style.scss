@@ -1,0 +1,22 @@
+* {
+    font-family: 'Roboto';
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+@import "base/variables";
+@import "blocks/header";
+@import "blocks/prengi";
+@import "blocks/desicions";
+@import "blocks/advantages";
+@import "blocks/variant";
+@import "blocks/contact-us";
+@import "blocks/footer";
+@import "blocks/btn";
+@import "blocks/basic";
+@import "blocks/tabs";
+@import "blocks/carousel";
+@import "blocks/media";
+

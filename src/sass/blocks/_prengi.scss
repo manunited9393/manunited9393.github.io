@@ -1,0 +1,48 @@
+.prengi {
+    font-family: 'Roboto Bold';
+    padding: 80px 0px;
+    &__block {
+        padding: 0px 47px 40px 47px;
+        border: 1px solid #ececec;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+        &_bold {
+            font-weight: 700;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -25px;
+            right: -25px;
+            width: 100px;
+            height: 100px;
+            background: url(../img/prengi-add.png) center center/cover no-repeat;
+            z-index: -1;
+        }
+    }
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 900;
+        text-transform: uppercase;
+        &:before {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 169px;
+            height: 72px;
+            background: url(../img/prengi-arrow.png);
+            margin-bottom: 33px;
+        }
+    }
+
+}

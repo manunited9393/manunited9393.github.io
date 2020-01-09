@@ -1,0 +1,60 @@
+/* Style the tab */
+.tab {
+    padding: 18px 0;
+    display: block;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 845px;
+    overflow: hidden;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+}
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    padding: 0px 25px;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-right: 1px solid #fff;
+    font-weight: 400;
+    &:hover {
+        color: $blue-color;
+    }
+    &:last-child {
+        border: none;
+    }
+  }  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    // background-color: #ccc;
+    color: $blue-color;
+    font-weight: 900;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    &:first-child {
+        display: block;
+    }
+  }
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

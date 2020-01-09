@@ -1,0 +1,29 @@
+.advantages {
+    padding: 75px 0px 80px 0px;
+    &__title {
+        margin: 0 auto;
+        width: 385px;
+    }
+    &__items {
+        margin-top: 50px;
+    }
+    &__item {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        padding: 35px 105px 0 105px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 45%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 23px;
+        background-color: rgba(0,0,0, .5);
+    }
+}

@@ -1,0 +1,13 @@
+.desicions {
+    padding: 75px 0 0 0;
+    background: url(../img/bg-desicion.jpg) center center/cover no-repeat;
+    min-height: 890px;
+    position: relative;
+    &__content {
+        position: relative;
+    }
+    &__title {
+        margin: 0 auto;
+        width: 630px;
+    }
+}
