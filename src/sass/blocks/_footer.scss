@@ -5,6 +5,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__descr {
         margin-top: 20px;

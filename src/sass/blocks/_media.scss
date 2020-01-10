@@ -1,3 +1,46 @@
+@media (max-width: 1200px) {
+    .tab {
+        padding: 18px 0;
+        display: block;
+        margin: 30px auto 0 auto;
+        width: 100%;
+    }
+    .tab button {
+        padding: 0px 12px;
+    }  
+
+    .carousel-inner {
+        position: relative;
+        margin-top: 30px;
+        overflow: hidden;
+        &__content {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            img {
+                margin: 0 auto;
+                width: 99%;
+                height: 310px;
+            }
+        }
+    }
+    .slick-prev {
+        left: 150px;
+        bottom: -140px;
+        z-index: 9;
+        &:after {
+            content: '\f053';
+        }
+    }
+    .slick-next {
+        right: 150px;
+        bottom: -140px;
+        &:after {
+            content: '\f054';
+    
+        }
+    }
+}
 @media (max-width: 600px) {
     .title {
         width: 100%;
@@ -147,53 +190,46 @@
             font-size: 23px;
             top: 44px;
         }
-        display: flex;
+        &__container {
+            &_left {
+                padding-right: 0;
+            }
+            &_right {
+                padding-left: 0;
+            }
+        }
         flex-direction: column;
         min-height: 480px;
         &__block {
             padding: 150px 0 150px 0;
-            position: relative;
-            width: 100%;
-            padding-right: 0px;
-            text-align: right;
-            &:last-child {
-                padding: 150px 0 150px 0;
-                background-image: url(../img/variant2.jpg);
-                text-align: left;
-            }
         }
         &__text {
-            margin-top: 0px;
-            margin-left: 0;
             width: 100%;
-            position: relative;
-            z-index: 1;
             text-align: center;
-            &_mr {
-                margin-left: auto;
+        }
+    }
+    // contact-us
+    .contact-us {
+        &__title {
+            margin-top: 20px;
+            font-size: 22px;
+        }
+    }
+    // footer
+    .footer {
+        padding-left: 30px;
+        &__column {
+            &:first-child {
+                p {
+                    display: none;
+                }
+                img {
+                    margin-top: 0;
+                }
             }
-        }
-        &__subtitle {
-            font-weight: 900;
-            font-size: 30px;
-            z-index: 3;
-        }
-        &__descr {
-            font-size: 18px;
-            font-weight: 300;
-            z-index: 3;
-        }
-        &__square {
-            position: absolute;
-            right: 40px;
-            top: 320px;
-            transform: translateY(-50%);
-            width: 160px;
-            height: 160px;
-            display: none;
-            background-color: rgba(0, 194, 240, .5);
-            &_right {
-                left: 40px;
+            &:nth-child(2) {
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
         }
     }
