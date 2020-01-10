@@ -8,38 +8,6 @@
     .tab button {
         padding: 0px 12px;
     }  
-
-    .carousel-inner {
-        position: relative;
-        margin-top: 30px;
-        overflow: hidden;
-        &__content {
-            width: 100%;
-            text-align: center;
-            margin: 0 auto;
-            img {
-                margin: 0 auto;
-                width: 99%;
-                height: 310px;
-            }
-        }
-    }
-    .slick-prev {
-        left: 150px;
-        bottom: -140px;
-        z-index: 9;
-        &:after {
-            content: '\f053';
-        }
-    }
-    .slick-next {
-        right: 150px;
-        bottom: -140px;
-        &:after {
-            content: '\f054';
-    
-        }
-    }
 }
 @media (max-width: 600px) {
     .title {

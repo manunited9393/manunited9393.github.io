@@ -45,9 +45,34 @@ function openCity(evt, cityName) {
   document.getElementById("defaultOpen").click();
 
   $(function(){
-    $('.carousel-inner').slick({
+    $('.carousel__inner').slick({
+        speed: 2000,
+        adaptiveHeight: true,
+        // autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: true,
         prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
     });
 });
 
