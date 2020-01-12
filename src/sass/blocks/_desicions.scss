@@ -3,11 +3,43 @@
     background: url(../img/bg-desicion.jpg) center center/cover no-repeat;
     min-height: 890px;
     position: relative;
-    &__content {
+    &__wrapper {
         position: relative;
     }
     &__title {
         margin: 0 auto;
         width: 630px;
+    }
+    // tabs
+    &__tabs {
+        margin: 10px auto 0 auto;
+        padding: 5px 10px;
+        max-width: 845px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, .8);
+        border-radius: 5px;
+    }
+    &__tab {
+        padding: 15px 22px;
+        font-size: 14px;
+        border-right: 1px solid rgba(255, 255, 255, .5);
+        cursor: pointer;
+        &:last-child {
+            border-right: none;
+        }
+        &_active {
+            color: $blue-color;
+            font-weight: 700;
+        }
+    }
+    &__content {
+        margin-top: 30px;
+        display: none;
+        &_active {
+            display: block;
+        }
     }
 }
