@@ -57,9 +57,7 @@
     }
     &__content {
         height: 100%;
-        color: #fff;
         position: relative;
-        z-index: 2;
     }
     &__content-top {
         display: flex;
@@ -96,12 +94,21 @@
     list-style: none;
     &__item {
         margin-left: 45px;
+        // &:hover {
+        //     animation: bounce 1s infinite ease-in-out;
+        // }
     }
     &__link {
         font-size: 13px;
         color: #fff;
         font-weight: 900;
-        text-transform: uppercase;;
+        text-transform: uppercase;
+        &:active {
+            color: #000;
+        }
+        &:link {
+            color: red;
+        }
     }
 }
 .hamburger {

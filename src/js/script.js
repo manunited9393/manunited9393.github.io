@@ -61,7 +61,15 @@ $(document).ready(function(){
         .addClass('desicions__tab_active').siblings().removeClass('desicions__tab_active')
         .closest('div.desicions__wrapper').find('div.desicions__content').removeClass('desicions__content_active').eq($(this).index()).addClass('desicions__content_active');
     });
-    
+
+    new WOW().init();
+
+    $('[data-modal=contact]').on('click', function() {
+      $('.overlay, #contact').fadeIn('slow');   
+    });
+    $('.modall__close').on('click', function() {
+      $('.overlay, #contact').fadeOut('slow');
+    });
 
 });
 

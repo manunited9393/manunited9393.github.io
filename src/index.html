@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
@@ -61,7 +62,6 @@
             </div>
         </div>
         <div class="header-main">
-        <div class="cover"></div>
             <div class="container">
                 <div class="header-main__content">
                     <img src="img/phone.png" alt="phone" class="header-main__phone">
@@ -76,8 +76,8 @@
                         </div>
                         <ul class="menu">
                             <li class="menu__item"><a href="#" class="menu__link">главная</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">модули</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">отрасли</a></li>
+                            <li class="menu__item"><a href="#prengi" class="menu__link">модули</a></li>
+                            <li class="menu__item"><a href="#advantages" class="menu__link">отрасли</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">о нас</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">наши обязательства</a></li>
                         </ul>
@@ -88,16 +88,18 @@
                     <p class="header-main__desc">
                         <span>PRENGI</span> - Платформа для прозрачного управления бизнесом
                     </p>
-                    <button class="btn header-main__btn">Получить доступ</button>
+                    <button data-modal="contact" type="button" class="btn btn-primary">
+                        связаться
+                    </button>                    
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="prengi">
+    <div class="prengi" id="prengi">
         <div class="container">
             <div class="row">
-                <div class="col col-lg-4 ">
+                <div class="col col-lg-4 lightSpeedIn wow" data-wow-duration="2s"  data-wow-delay="0s">
                     <div class="prengi__block">
                         <img src="img/prengi1.png" alt="prengi5.png" class="prengi__img">
                         <p class="prengi__text">
@@ -105,7 +107,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col col-lg-4 ">
+                <div class="col col-lg-4 lightSpeedIn wow"  data-wow-duration="2s"  data-wow-delay="0.2s">
                     <div class="prengi__block">
                         <img src="img/prengi2.png" alt="prengi5.png" class="prengi__img">
                         <p class="prengi__text">
@@ -113,7 +115,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col col-lg-4 ">
+                <div class="col col-lg-4 lightSpeedIn wow"  data-wow-duration="2s"  data-wow-delay="0.4s">
                     <div class="prengi__block">
                         <img src="img/prengi3.png" alt="prengi5.png" class="prengi__img">
                         <p class="prengi__text">
@@ -124,7 +126,7 @@
             </div>
             <h1 class="prengi__title">c prengi</h1>
             <div class="row">
-                <div class="col-lg-4 col-12">
+                <div class="col-lg-4 col-12 lightSpeedIn wow" data-wow-duration="2s"  data-wow-delay="0.2s">
                     <div class="prengi__block">
                         <img src="img/prengi4.png" alt="prengi5.png" class="prengi__img">
                         <p class="prengi__text prengi__text_bold">
@@ -132,7 +134,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 lightSpeedIn wow" data-wow-duration="2s"  data-wow-delay="0.4s">
                     <div class="prengi__block">
                         <img src="img/prengi5.png" alt="prengi5" class="prengi__img">
                         <p class="prengi__text prengi__text_bold">
@@ -140,7 +142,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 lightSpeedIn wow" data-wow-duration="2s"  data-wow-delay="0.6s">
                     <div class="prengi__block">
                         <img src="img/prengi6.png" alt="prengi5.png" class="prengi__img">
                         <p class="prengi__text prengi__text_bold">
@@ -153,7 +155,6 @@
     </div>
 
     <section class="desicions">
-        <div class="cover"></div>
         <div class="container">
             <div class="desicions__wrapper">
                 <div class="title desicions__title">Prengi предоставляет экспертные решения для Вашей отрасли</div>
@@ -214,7 +215,7 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="title title_black advantages__title">Преимущества Prengi для Вашей отрасли</div>
             <div class="advantages__items">
@@ -223,7 +224,7 @@
                         <div class="advantages__item">
                             <img src="img/advantages1.jpg" alt="bg-first">
                             <div class="advantages__text">
-                                Система “Intellect”, учет уровня доступов
+                                <div class="bounceInLeft wow" data-wow-duration="2s" data-wow-delay="0s">Система “Intellect”, учет уровня доступов</div>
                             </div>
                         </div>
                     </div>
@@ -231,7 +232,7 @@
                         <div class="advantages__item">
                             <img src="img/advantages2.jpg" alt="bg-first">
                             <div class="advantages__text">
-                                Возможность использовать из любой точки мира с любого устройства
+                                <div class="bounceInRight wow" data-wow-duration="2s" data-wow-delay="0s">Возможность использовать из любой точки мира с любого устройства</div>
                             </div>
                         </div>
                     </div>
@@ -239,7 +240,7 @@
                         <div class="advantages__item">
                             <img src="img/advantages3.jpg" alt="bg-first">
                             <div class="advantages__text">
-                                Нет необходимости установки и стационарной работы программиста
+                                <div class="bounceInLeft wow" data-wow-duration="2s" data-wow-delay="0s">Нет необходимости установки и стационарной работы программиста</div >
                             </div>
                         </div>
                     </div>
@@ -247,7 +248,7 @@
                         <div class="advantages__item">
                             <img src="img/advantages4.jpg" alt="bg-first">
                             <div class="advantages__text">
-                                “Живые” бизнес-процессы
+                                <div class="bounceInRight wow" data-wow-duration="2s" data-wow-delay="0s">“Живые” бизнес-процессы</div>
                             </div>
                         </div>
                     </div>
@@ -255,7 +256,7 @@
                         <div class="advantages__item">
                             <img src="img/advantages5.jpg" alt="bg-first">
                             <div class="advantages__text">
-                                Возможность внедрения и тестирования в реальном времени
+                                <div class="bounceInLeft wow" data-wow-duration="2s" data-wow-delay="0s">Возможность внедрения и тестирования в реальном времени</div>
                             </div>
                         </div>
                     </div>
@@ -263,7 +264,7 @@
                         <div class="advantages__item">
                             <img src="img/advantages6.jpg" alt="bg-first">
                             <div class="advantages__text">
-                                Никаких предоплат, оплата после старта
+                                <div class="bounceInRight wow" data-wow-duration="2s" data-wow-delay="0s">Никаких предоплат, оплата после старта</div>
                             </div>
                         </div>
                     </div>
@@ -305,6 +306,15 @@
         </div>
         <div class="contact-us__title title title_black">Приступить очень просто!<br> Нужно получить доступ и начать работу!</div>
         <button class="btn contact-us__btn">связаться с нами</button>
+            <form action="#" method="get" class="form contact-us__form">
+                <p class="contact-us__text">
+                    заполните форму зявки и мы Вам перезвоним
+                </p>
+                <input required type="text" name="name" placeholder="Ваше имя">
+                <input required type="number" name="phone" placeholder="Номер телефона">
+                <input required type="email" name="email" placeholder="Ваш E-mail">
+                <button class="btn_form btn">Отправить данные</button>
+            </form>
     </section>
 
     <footer class="footer">
@@ -361,8 +371,26 @@
             <span class="footer__rights">© Prengi Ink. 2008-2017 Все права защищены.</span>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <div class="overlay">
+        <div class="modall">
+            <div class="modall__close">&times;</div>
+            <div class="modall__title">
+                Заполните форму
+            </div>
+            <form action="#" method="get" class="form">
+                <input class="form__item" required type="text" name="name" placeholder="Ваше имя">
+                <input class="form__item" required type="number" name="phone" placeholder="Номер телефона">
+                <input class="form__item" required type="email" name="email" placeholder="Ваш E-mail">
+                <button class="form__btn btn">Отправить данные</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"> </script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
