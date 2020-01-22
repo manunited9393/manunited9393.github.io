@@ -45,7 +45,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 580,
             settings: {
               arrows: false,
               centerMode: false,
@@ -64,11 +64,60 @@ $(document).ready(function(){
 
     new WOW().init();
 
+
     $('[data-modal=contact]').on('click', function() {
-      $('.overlay, #contact').fadeIn('slow');   
+      $('.overlay, #connection').fadeIn('slow');
     });
-    $('.modall__close').on('click', function() {
-      $('.overlay, #contact').fadeOut('slow');
+
+    $('.modal__close').on('click', function() {
+      $('.overlay, #connection, #thanks').fadeOut('slow');
+    })
+
+
+
+    
+    function validateForm(form){
+      $(form).validate({
+        rules: {
+          // simple rule, converted to {required:true}
+          name: "required",
+          phone: "required",
+          // compound rule
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Введите пожалуйста ваше имя",
+          email: {
+            required: "We need your email address to contact you",
+            email: "Your email address must be in the format of name@domain.com"
+          }
+        }
+      });
+    };
+    
+    validateForm('#connection form');
+    validateForm('#form-section');
+
+    $('input[name=phone]').mask('+7 (999) 999-99-99');
+
+
+    $('form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('.modal').fadeOut();
+        $('.modal_mini, .ovelay').fadeIn('slow');
+        
+        $('form').trigger('reset');
+      });
+      return false;
     });
 
 });

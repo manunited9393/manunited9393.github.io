@@ -25,7 +25,6 @@
             position: static;
         }
         &__text {
-            display: block;
             border: 1px solid #323232;
             padding: 10px;
             transition: .5s all;
@@ -33,10 +32,10 @@
             left: 50%;
             transform: translateX(-50%);
             top: 90px;
+            background-color: red;
             opacity: 0;
             &_active {
                 opacity: 1;
-                
             }
         }
         &__name-country {
@@ -125,10 +124,17 @@
     }
 
     // desicions block
-    .tab {
-        width: 100%;
-    }
     .desicions {
+        min-height: 610px;
+        &__tabs {
+            width: 100%;
+            overflow: hidden;
+        }
+        &__tab {
+            margin: 0;
+            padding: 0;
+            border-right: none;
+        }
         &__title {
             width: 100%;
         }
@@ -201,6 +207,35 @@
             }
         }
     }
+
+    .overlay {
+        display: none;
+        background-color: rgba(0,0,0, .7);
+    }
+    .feed-form {
+        padding: 0 60px;
+        padding-top: 60px;
+        width: 100%;
+        // background-color: rgba(0,0,0, .7);
+        height: 100vh;
+        input {
+
+        }
+    }
+    .modal {
+        transform: translateY(0);
+        &__close {
+            position: absolute;
+            bottom: 0;
+            font-size: 60px;
+            color: #f00;
+            cursor: pointer;
+        }
+    }
 }
+
+
+
+
 
 

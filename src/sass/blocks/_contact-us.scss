@@ -1,6 +1,7 @@
 .contact-us {
     padding: 100px 0px 80px 0px;
     text-align: center;
+    position: relative;
     &__title {
         margin: 0 auto;
         text-align: center;
@@ -43,11 +44,6 @@
                 height: 60%;
             }
         }
-        // &:focus {
-        //     &:before {
-        //         height: 5%;
-        //     }
-        // }
         &:hover {
             &:after {
                 width: 80%;

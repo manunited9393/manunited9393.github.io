@@ -88,7 +88,7 @@
                     <p class="header-main__desc">
                         <span>PRENGI</span> - Платформа для прозрачного управления бизнесом
                     </p>
-                    <button data-modal="contact" type="button" class="btn btn-primary">
+                    <button data-modal="contact" type="button" class="btn">
                         связаться
                     </button>                    
                 </div>
@@ -301,20 +301,14 @@
     </section>
 
     <section class="contact-us">
-        <div class="contact-us__img-block">
-            <img src="img/contact-us.png" alt="contact" class="contact-us__img">
-        </div>
-        <div class="contact-us__title title title_black">Приступить очень просто!<br> Нужно получить доступ и начать работу!</div>
-        <button class="btn contact-us__btn">связаться с нами</button>
-            <form action="#" method="get" class="form contact-us__form">
-                <p class="contact-us__text">
-                    заполните форму зявки и мы Вам перезвоним
-                </p>
-                <input required type="text" name="name" placeholder="Ваше имя">
-                <input required type="number" name="phone" placeholder="Номер телефона">
-                <input required type="email" name="email" placeholder="Ваш E-mail">
-                <button class="btn_form btn">Отправить данные</button>
-            </form>
+        <form action="#" class="feed-form" id="form-section">
+            <h2 class="feed-form__title">заполните форму</h2>
+            <p class="feed-form__descr">наш сотрудник обязательно свяжется с вами</p>
+            <input type="text" name="name" placeholder="введите ваше имя:">
+            <input  name="phone" placeholder="введите ваш номер:">
+            <input type="email" name="email" placeholder="введите ваш E-mail:">
+            <button class="btn">отправить</button>
+        </form>
     </section>
 
     <footer class="footer">
@@ -373,24 +367,36 @@
     </footer>
 
     <div class="overlay">
-        <div class="modall">
-            <div class="modall__close">&times;</div>
-            <div class="modall__title">
-                Заполните форму
-            </div>
-            <form action="#" method="get" class="form">
-                <input class="form__item" required type="text" name="name" placeholder="Ваше имя">
-                <input class="form__item" required type="number" name="phone" placeholder="Номер телефона">
-                <input class="form__item" required type="email" name="email" placeholder="Ваш E-mail">
-                <button class="form__btn btn">Отправить данные</button>
+        <div class="modal" id="connection">
+            <div class="modal__close">&times;</div>
+            <form action="#" class="feed-form">
+                <h2 class="feed-form__title modal__title">заполните форму</h2>
+                <p class="feed-form__descr modal__descr">наш сотрудник обязательно свяжется с вами</p>
+                <input type="text" name="name" placeholder="введите ваше имя">
+                <input name="phone" placeholder="введите ваш номер">
+                <input type="email" name="email" placeholder="введите ваш E-mail">
+                <button class="btn">отправить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>    
+            <form action="#" class="feed-form">
+                <h2 class="feed-form__title modal__title">заполните форму</h2>
+                <p class="feed-form__descr modal__descr">наш сотрудник обязательно свяжется с вами</p>
             </form>
         </div>
     </div>
 
 
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"> </script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -70,6 +70,7 @@
         height: 20px;
     }
     &__title {
+        color: #fff;
         margin-top: 142px;
         line-height: 48px;
         font-family: 'Roboto Black';
@@ -77,6 +78,7 @@
         font-size: 42px;
     }
     &__desc {
+        color: #fff;
         margin-top: 10px;
         margin-bottom: 40px;
         width: 450px;
@@ -94,21 +96,15 @@
     list-style: none;
     &__item {
         margin-left: 45px;
-        // &:hover {
-        //     animation: bounce 1s infinite ease-in-out;
-        // }
+        &:hover {
+            animation: bounce 1s infinite ease-in-out;
+        }
     }
     &__link {
         font-size: 13px;
         color: #fff;
         font-weight: 900;
         text-transform: uppercase;
-        &:active {
-            color: #000;
-        }
-        &:link {
-            color: red;
-        }
     }
 }
 .hamburger {
