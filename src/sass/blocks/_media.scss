@@ -211,29 +211,42 @@
     .overlay {
         display: none;
         background-color: rgba(0,0,0, .7);
+        z-index: 200;
     }
     .feed-form {
         padding: 0 60px;
         padding-top: 60px;
         width: 100%;
         // background-color: rgba(0,0,0, .7);
-        height: 100vh;
+        // height: 100vh;
         input {
-
         }
     }
     .modal {
         transform: translateY(0);
         &__close {
             position: absolute;
-            bottom: 0;
+            left: unset;
+            top: unset;
+            bottom: 116px;
+            right: 37px;
             font-size: 60px;
             color: #f00;
             cursor: pointer;
+
         }
     }
 }
-
+@media (max-width:366px) {
+    .modal {
+        &__descr {
+            font-size: 15px;
+        }
+        &__close {
+            right: 21px;
+        }
+    }
+}
 
 
 

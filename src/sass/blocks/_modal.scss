@@ -11,13 +11,12 @@
     bottom: 0;
 }
 .modal {
-    position: absolute;
+    position: relative;
     transform: translateY(20%);
     // top: 50%;
     display: block;
     width: 100%;
-    min-height: 500px;
-    max-height: 700px;
+    height: 525px;
     &__close {
         position: absolute;
         left: 64%;
